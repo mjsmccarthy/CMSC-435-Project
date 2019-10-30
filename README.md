@@ -1,10 +1,20 @@
 # CMSC-435-Project
 
 # Prerequsites 
-To run the the python file, you need to download the PyBioMed package from the following repo: https://github.com/gadsbyfly/PyBioMed
+Python version: 2.7
+
+Python Packages:
+- Pandas
+- PyBioMed: https://github.com/gadsbyfly/PyBioMed 
+    - The prerequisites listed on the repo are not required. You can just download the PyBioMed package and it will work.
+- Pandas-ml: https://pandas-ml.readthedocs.io/en/latest/conf_mat.html#seaborn-plot-of-a-binary-confusion-matrix-todo
+    - Install using pip. This package can be used to get stats from a confusion matrix. The link shows an example.
+
 
 # Description
-Using the training_dataset.csv file, the python script generates a features.csv file. In the features file, various protein descriptors have been extracted. These can be used to start building our RapidMiner model. 
+Using the training_dataset.csv file, the python script does two main things:
+1. Generates a features.csv file from training_dataset.csv
+2. Prints the statistics for a confusion matrix where a predicted_features.csv file has been provided. The predicted_features.csv should come from the result of our model via RapidMiner. You can export the dataset genreated by the model as a csv file.
 
 We can add or remove features later. This is just a starting point.
 
